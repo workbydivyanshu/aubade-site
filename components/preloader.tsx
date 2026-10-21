@@ -13,6 +13,7 @@ export default function Preloader() {
   useEffect(() => {
     const html = document.documentElement;
     const skip = sessionStorage.getItem("aubade_pre");
+    const rm = html.classList.contains("rm");
     if (skip) {
       html.classList.remove("loading");
       html.classList.add("ready");
@@ -25,10 +26,10 @@ export default function Preloader() {
     let fontsReady = false;
     Promise.race([
       document.fonts?.ready ?? Promise.resolve(),
-      new Promise((r) => setTimeout(r, 900)),
+      new Promise((r) => setTimeout(r, rm ? 200 : 900)),
     ]).then(() => (fontsReady = true));
 
-    const total = 1350;
+    const total = rm ? 300 : 1350;
     const ease = (x: number) => 1 - Math.pow(1 - x, 3);
     const tick = (t: number) => {
       const p = Math.min(1, (t - start) / total);

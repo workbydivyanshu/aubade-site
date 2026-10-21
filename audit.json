@@ -1,0 +1,28 @@
+{
+  "console": [],
+  "pageerrors": [],
+  "checks": {
+    "readyClass": true,
+    "loadingClassGone": true,
+    "preloaderGone": true,
+    "lenisLive": true,
+    "pianoClick": "played both",
+    "rmClass": true,
+    "rmLenisOff": true,
+    "rmRevealVisible": true,
+    "rmPreloaderGone": false,
+    "smartPickText": "Download for Linux",
+    "dlCards": 7,
+    "dlFiles": [
+      "aubade_1.0.2_x86_64.rpm",
+      "aubade_1.0.2_amd64.deb",
+      "aubade_1.0.2_x86_64.AppImage",
+      "aubade_1.0.2_windows-x86_64-setup.exe",
+      "aubade_1.0.2_windows-x86_64-portable.zip",
+      "aubade_1.0.2_macos.dmg",
+      "aubade_1.0.2_macos-arm64.zip"
+    ],
+    "mobileNoHScroll": true,
+    "mobileDlNoHScroll": true
+  }
+}
