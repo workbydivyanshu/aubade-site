@@ -10,7 +10,7 @@
     "rmClass": true,
     "rmLenisOff": true,
     "rmRevealVisible": true,
-    "rmPreloaderGone": false,
+    "rmPreloaderGone": true,
     "smartPickText": "Download for Linux",
     "dlCards": 7,
     "dlFiles": [
