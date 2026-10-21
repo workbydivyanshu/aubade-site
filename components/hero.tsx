@@ -28,8 +28,8 @@ export default function Hero() {
         }}
       />
 
-      <div className="mx-auto grid max-w-[1380px] grid-cols-1 items-center gap-y-14 xl:grid-cols-[1.02fr_0.98fr] xl:gap-x-10">
-        <div style={{ transform: "translate(var(--mx,0)*-14px, var(--my,0)*-8px)" }}>
+      <div className="mx-auto max-w-[1380px]">
+        <div style={{ maxWidth: 880 }}>
           <p className="overline" data-hero style={{ "--d": ".05s" } as React.CSSProperties}>
             Local-first — Fedora first, everywhere
           </p>
@@ -37,19 +37,18 @@ export default function Hero() {
           <h1
             className="hero-words display"
             data-hero
-            style={{ margin: "26px 0 0" }}
+            style={{ margin: "30px 0 0" }}
           >
             <SplitWords gate="preload" text="Every track you own." />
-            <em className="block">
-              <SplitWords gate="preload" text="One keystroke away." d={0.16} />
+            <em>
+              <SplitWords gate="preload" text="One keystroke" d={0.16} />
+              <SplitWords gate="preload" text="away." d={0.28} />
             </em>
           </h1>
 
           <p
             className="hero-sub"
-            style={
-              { "--d": ".34s", marginTop: 30 } as React.CSSProperties
-            }
+            style={{ "--d": ".34s", marginTop: 34 } as React.CSSProperties}
             data-hero
           >
             Aubade lives on your machine and nowhere else. It reads your

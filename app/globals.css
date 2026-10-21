@@ -1002,27 +1002,29 @@ html.ready .hero-canvas {
 }
 
 html.ready .aw-float {
-  transform: rotate(-1.3deg);
-  animation: bob 8s ease-in-out infinite;
+  transform: rotate(-1.1deg);
+  animation: bob 9s ease-in-out infinite;
 }
 @keyframes bob {
-  0%, 100% { transform: rotate(-1.3deg) translateY(0); }
-  50% { transform: rotate(-1.3deg) translateY(-12px); }
+  0%, 100% { transform: rotate(-1.1deg) translateY(0); }
+  50% { transform: rotate(-0.5deg) translateY(-10px); }
 }
 .hero-words {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(42px, 7vw, 112px);
-  line-height: 1.02;
+  font-size: clamp(42px, 6.6vw, 104px);
+  line-height: 1.03;
   letter-spacing: -0.03em;
 }
 .hero-words em {
   display: block;
   color: var(--accent);
+  font-style: normal;
 }
 .aw-float {
   min-width: 0;
   max-width: 100%;
+  margin: clamp(46px, 7vw, 90px) auto 0;
 }
 @media (max-width: 900px) {
   .aw-float { animation: none !important; transform: none !important; }

@@ -11,7 +11,7 @@ export default function ScaledWindow({ children }: { children: React.ReactNode }
     const measure = () => {
       if (!stage.current) return;
       const w = stage.current.clientWidth;
-      setScale(Math.max(0.28, Math.min(1, w / 1120)));
+      setScale(Math.max(0.3, Math.min(1.12, w / 1120)));
     };
     measure();
     const ro = new ResizeObserver(measure);
