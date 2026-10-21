@@ -61,10 +61,11 @@ function fallback(tag: string, date: string | null): Release {
 
 type CacheShape = { data: Release; at: number } | null;
 let cache: CacheShape = null;
-const TEN_MIN = 10 * 60 * 1000;
+/** short memo: keeps the resolver cheap while never drifting from a new tag */
+const MEMO_MS = 60 * 1000;
 
 export async function getRelease(): Promise<Release> {
-  if (cache && Date.now() - cache.at < TEN_MIN) return cache.data;
+  if (cache && Date.now() - cache.at < MEMO_MS) return cache.data;
   try {
     const ctl = new AbortController();
     const t = setTimeout(() => ctl.abort(), 8000);

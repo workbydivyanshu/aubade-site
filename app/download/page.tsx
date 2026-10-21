@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Seven packages for every major desktop. Smart pick for your OS, direct one-tap links for Fedora, Ubuntu, Windows and the Mac.",
 };
 
-export const revalidate = 600;
+export const revalidate = 60;
 
 const CARDS: {
   key: AssetKey;
