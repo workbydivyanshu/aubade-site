@@ -19,9 +19,10 @@ export default function Nav() {
       <nav className="nav-links">
         <a href="#poem">The Poem</a>
         <a href="#cues">Cue Sheet</a>
-        <a href="#get">Formats</a>
+        <a href="#views">Views</a>
+        <a href="/download">Formats</a>
       </nav>
-      <a className="nav-cta" href="#get">
+      <a className="nav-cta" href="/download">
         Download
       </a>
     </header>
