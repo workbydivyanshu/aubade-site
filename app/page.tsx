@@ -1,6 +1,4 @@
 import Preloader from "@/components/preloader";
-import SmoothScroll from "@/components/smooth";
-import RevealProvider from "@/components/reveal";
 import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import Manifesto from "@/components/manifesto";
@@ -14,20 +12,16 @@ export default function Home() {
   return (
     <>
       <Preloader />
-      <SmoothScroll>
-        <RevealProvider>
-          <Nav />
-          <main>
-            <Hero />
-            <Manifesto />
-            <Tracklist />
-            <Views />
-            <Platforms />
-            <GetSection />
-          </main>
-          <Footer />
-        </RevealProvider>
-      </SmoothScroll>
+      <Nav />
+      <main>
+        <Hero />
+        <Manifesto />
+        <Tracklist />
+        <Views />
+        <Platforms />
+        <GetSection />
+      </main>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import SmoothScroll from "@/components/smooth";
+import RevealProvider from "@/components/reveal";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aubadehq.vercel.app"),
@@ -34,11 +36,19 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html:
+              // scroll-protect ONLY the home route: the preloader owns
+              // the `loading` lock there. Every other route boots unlocked.
+              "if(location.pathname==='/'){" +
               "document.documentElement.classList.add('loading');" +
+              "}else{" +
+              "document.documentElement.classList.add('ready');" +
+              "}" +
               "if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('rm');",
           }}
         />
-        {children}
+        <SmoothScroll>
+          <RevealProvider>{children}</RevealProvider>
+        </SmoothScroll>
       </body>
     </html>
   );
