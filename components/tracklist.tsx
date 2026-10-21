@@ -4,25 +4,25 @@ const CUES = [
   {
     no: "01",
     t: "Local-first, always",
-    p: "Your music is a folder, and Aubade reads it in place. Files never leave the machine that bought them — the cloud gets to live in its own story, on someone else's page.",
+    p: "Your music is a folder, and Aubade reads it in place. Files never leave your machine. The cloud can keep its own stories on someone else's page.",
     meta: ["no cloud", "offline at boot"],
   },
   {
     no: "02",
     t: "Lyrics, word for word",
-    p: "A 30Hz karaoke clock keeps every line in step with the vocal — glowing when it sings, dimming when it rests. Typography that finally keeps time.",
+    p: "A 30Hz karaoke clock keeps every line in step with the vocal, glowing when it sings and dimming when it rests. Typography that finally keeps time.",
     meta: ["30hz sync", "scroll to catch up"],
   },
   {
     no: "03",
     t: "Hi-res, honestly told",
-    p: "FLAC and Opus keep their true names. The dock prints OPUS 44.1 like a press stamp — what you hear is exactly what the file says, and nothing pretends to be richer than that.",
+    p: "FLAC and Opus keep their true names. The dock prints OPUS 44.1 like a press stamp: what you hear is exactly what the file says, and nothing pretends to be richer than that.",
     meta: ["flac", "opus 44.1", "mp3"],
   },
   {
     no: "04",
     t: "Commands before menus",
-    p: "Ctrl K opens one command field that reaches the whole library — search, queue, play, jump. Two hands stay where they usually are: on the keys.",
+    p: "Ctrl K opens one command field that reaches the whole library: search, queue, play, jump. Your hands stay where they usually are, on the keys.",
     meta: ["ctrl k", "instant jump"],
   },
   {
@@ -34,7 +34,7 @@ const CUES = [
   {
     no: "06",
     t: "Dawn-fast search",
-    p: "The index lives in memory, so thousands of titles stay a keystroke apart. Type three letters — the answer was already waiting for you.",
+    p: "The index lives in memory, so thousands of titles stay a keystroke apart. Type three letters and the answer is already there.",
     meta: ["in-memory", "keyboard-tight"],
   },
 ];
@@ -45,7 +45,7 @@ export default function Tracklist() {
       <div className="mx-auto max-w-[1380px]">
         <div className="sect-head">
           <p className="overline" data-reveal>
-            Side B — what it does
+            Side B: what it does
           </p>
           <h2 className="sect-title" style={{ maxWidth: 720 }}>
             <SplitWords text="Every feature, cue by cue." />
@@ -61,7 +61,7 @@ export default function Tracklist() {
             }}
             data-reveal
           >
-            Six cues — pressing on both
+            Six cues, both sides
           </span>
         </div>
 

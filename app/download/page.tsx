@@ -4,7 +4,7 @@ import { SplitWords } from "@/components/split";
 import SmartPick from "@/components/smart-pick";
 
 export const metadata: Metadata = {
-  title: "Download — Aubade",
+  title: "Download · Aubade",
   description:
     "Seven packages for every major desktop. Smart pick for your OS, direct one-tap links for Fedora, Ubuntu, Windows and the Mac.",
 };
@@ -54,7 +54,7 @@ export default async function DownloadPage() {
           </h1>
           <p className="dl-sub" data-reveal>
             Seven packages, one player. Every card below serves the newest
-            release, resolved live — no mirrors to hunt down, no login to make.
+            release, resolved live. No mirrors to hunt down and no login to make.
           </p>
         </header>
 
@@ -94,9 +94,9 @@ export default async function DownloadPage() {
         ))}
 
         <p className="dl-note" data-reveal>
-          First run: point Aubade at your music folder once — it indexes and
-          remembers. Update checks are anonymous, and telemetry only exists as
-          an opt-in card that you switch on yourself, inside the app.
+          First run: point Aubade at your music folder once, and it indexes and
+          remembers. Update checks are anonymous. Telemetry exists only as an
+          opt-in card you switch on yourself, inside the app.
         </p>
 
         <a className="btn-ghost mt-10" href="/">

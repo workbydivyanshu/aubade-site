@@ -5,11 +5,11 @@ import { SplitWords } from "./split";
 
 const LINES = [
   "An aubade is a poem lovers trade at dawn.",
-  "The player by that name takes after it —",
+  "The player by that name takes after it:",
   "quiet, personal, exactly on time.",
   "Your music stays in your folders. So does Aubade.",
   "No account signs you in. No library leaves home.",
-  "One keystroke pulls a song from five thousand.",
+  "One keystroke finds the song.",
   "The day can start with the chorus. It usually does.",
 ];
 
@@ -56,7 +56,7 @@ export default function Manifesto() {
       <div className="mx-auto max-w-[1200px]">
         <div className="sect-head">
           <p className="overline" data-reveal>
-            Side A — the case for quiet
+            Side A: the case for quiet
           </p>
           <h2
             className="sect-title"

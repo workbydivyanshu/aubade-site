@@ -9,7 +9,7 @@ const RUNS: {
   { sys: "Fedora", pkg: "aubade_NNN_x86_64.rpm", route: "/download/fedora", how: "sudo dnf install ./aubade_NNN_x86_64.rpm" },
   { sys: "Ubuntu · Debian", pkg: "aubade_NNN_amd64.deb", route: "/download/debian", how: "sudo dpkg -i ./aubade_NNN_amd64.deb" },
   { sys: "Any Linux", pkg: "aubade_NNN_x86_64.AppImage", route: "/download/linux", how: "chmod +x aubade_NNN_x86_64.AppImage && ./aubade_NNN_x86_64.AppImage" },
-  { sys: "Windows", pkg: "aubade_NNN_windows-x86_64-setup.exe", route: "/download/windows", how: "double-click the installer — or stay portable with the .zip" },
+  { sys: "Windows", pkg: "aubade_NNN_windows-x86_64-setup.exe", route: "/download/windows", how: "double-click the installer, or stay portable with the .zip" },
   { sys: "macOS · Apple Silicon", pkg: "aubade_NNN_macos-arm64.zip", route: "/download/macos-arm64", how: "unzip and launch" },
   { sys: "macOS · Intel", pkg: "aubade_NNN_macos.dmg", route: "/download/macos", how: "open the .dmg, drag to Applications" },
 ];
@@ -20,7 +20,7 @@ export function Platforms() {
       <div className="mx-auto max-w-[1380px]">
         <div className="sect-head">
           <p className="overline" data-reveal>
-            Side D — the morning machines
+            Side D: the morning machines
           </p>
           <h2 className="sect-title" style={{ maxWidth: 760 }}>
             <SplitWords text="Runs where your mornings run." />

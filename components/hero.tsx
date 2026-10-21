@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="mx-auto max-w-[1380px]">
         <div style={{ maxWidth: 880 }}>
           <p className="overline" data-hero style={{ "--d": ".05s" } as React.CSSProperties}>
-            Local-first — Fedora first, everywhere
+            Local-first, Fedora first, everywhere
           </p>
 
           <h1
@@ -53,7 +53,7 @@ export default function Hero() {
           >
             Aubade lives on your machine and nowhere else. It reads your
             folders, sings your lyrics back in time and never asks for an
-            account. Five thousand tracks, indexed before the kettle boils.
+            account. A whole library, indexed before the kettle boils.
           </p>
 
           <div
@@ -75,7 +75,7 @@ export default function Hero() {
             className="mt-14 grid max-w-[560px] grid-cols-4 gap-6 border-t border-[var(--hair)] pt-6"
           >
             {[
-              ["5,677", "track library"],
+              ["7", "install formats"],
               ["0", "cloud, ever"],
               ["30hz", "lyrics clock"],
               ["82px", "island dock"],

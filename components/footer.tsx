@@ -8,7 +8,7 @@ export function Footer() {
         AUBADE
       </div>
       <div className="footer-bar">
-        <span>RISING AT © 2026 — BUILT AT DAYBREAK</span>
+        <span>RISING AT © 2026 · BUILT AT DAYBREAK</span>
         <nav className="footer-nav">
           <a href="/download">Downloads</a>
           <a href="/privacy">Privacy</a>

@@ -58,7 +58,7 @@ const RAIL: { label: string; icon: React.ReactNode; active?: boolean; gap?: bool
 
 export default function AppWindow() {
   return (
-    <div className="aw" role="img" aria-label="Stylised replica of the Aubade player: a dark window with a slim rail, a song table with a synthetic library, and the floating transport island.">
+    <div className="aw" role="img" aria-label="Stylized replica of the Aubade player: a dark window with a slim rail, a song table in a synthetic library, and the floating transport island.">
       {/* titlebar */}
       <div className="aw-tb">
         <span className="tb-btn"><IconChevron flip s={13} /></span>
@@ -100,7 +100,7 @@ export default function AppWindow() {
         {/* content */}
         <div className="aw-content">
           <div className="aw-title">
-            Songs <span>· 4,088 tracks</span>
+            Songs <span>· your library</span>
           </div>
           <div className="aw-toolbar">
             <span className="aw-btn aw-btn-play">

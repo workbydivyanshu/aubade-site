@@ -16,7 +16,7 @@ export function GetSection() {
     <section className="section" id="get">
       <div className="mx-auto max-w-[1100px] get-wrap">
         <p className="overline" data-reveal>
-          Free, forever — seven formats
+          Free, forever. Seven formats
         </p>
         <h2 className="get-title" style={{ marginTop: 18 }}>
           <SplitWords text="Get the app." />

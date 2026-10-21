@@ -56,7 +56,7 @@ export default function SmartPick({ version }: { version: string }) {
           {pick ? (
             pick.note
           ) : (
-            "Any of the seven packages below runs the same player — pick your platform."
+            "Any of the seven packages below runs the same player. Pick your platform."
           )}
         </p>
       </div>

@@ -64,7 +64,7 @@ function V({
 }) {
   return (
     <figure className="gv" data-reveal style={{ "--d": d } as React.CSSProperties}>
-      <div className="gv-frame" role="img" aria-label={`${title} — stylised replica of the Aubade player, synthetic data only`}>
+      <div className="gv-frame" role="img" aria-label={`${title}: stylized replica of the Aubade player, synthetic data only`}>
         <div className="gv-head">
           <span className="gv-dot" />
           <span className="gv-headlabel mono">{label}</span>
@@ -86,7 +86,7 @@ export function Views() {
       <div className="mx-auto max-w-[1380px]">
         <div className="sect-head">
           <p className="overline" data-reveal>
-            Side C — portrait gallery
+            Side C: portrait gallery
           </p>
           <h2 className="sect-title" style={{ maxWidth: 760 }}>
             <SplitWords text="The player, in four moods." />
@@ -96,14 +96,14 @@ export function Views() {
         <div className="gv-grid">
           {/* A — library */}
           <V
-            label="VIEW — SONGS"
+            label="VIEW · SONGS"
             title="The library page"
             line="Index numbers, runtimes, and nothing pretending to be a feed."
             d="0s"
           >
             <div className="gv-body">
               <div className="gv-libhead">
-                <span className="gv-libtitle">Songs · 4,088 tracks</span>
+                <span className="gv-libtitle">Songs · your library</span>
                 <span className="gv-chip mono">Ctrl&nbsp;K</span>
               </div>
               {SONGS.map((s) => (
@@ -123,9 +123,9 @@ export function Views() {
 
           {/* B — lyrics */}
           <V
-            label="VIEW — LYRICS"
+            label="VIEW · LYRICS"
             title="Lyrics, keeping time"
-            line="The 30Hz karaoke clock — the singing line glows, the rest recedes."
+            line="The 30Hz karaoke clock: the singing line glows, the rest recedes."
             d="0.08s"
           >
             <div className="gv-body gv-lyr">
@@ -149,7 +149,7 @@ export function Views() {
 
           {/* C — dock */}
           <V
-            label="VIEW — DOCK"
+            label="VIEW · DOCK"
             title="The island dock"
             line="Eighty-two pixels of transport, lyrics and queue. r16, no corners cut."
             d="0.16s"
@@ -196,9 +196,9 @@ export function Views() {
 
           {/* D — tags */}
           <V
-            label="VIEW — TAGS"
+            label="VIEW · TAGS"
             title="Tags without ceremony"
-            line="Tidy your collection in place — counts, colours, no manual labour."
+            line="Tidy your collection in place: counts, colors, no manual labor."
             d="0.24s"
           >
             <div className="gv-body gv-tags">

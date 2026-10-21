@@ -63,8 +63,8 @@ export default function Piano() {
   }, []);
 
   return (
-    <div className="piano" role="group" aria-label="Decorative keyboard — press a key to hear a note">
-      <p className="piano-hint mono">HOVER — AND IF YOU LIKE, PRESS</p>
+    <div className="piano" role="group" aria-label="Decorative keyboard. Press a key to hear a note.">
+      <p className="piano-hint mono">HOVER, AND IF YOU LIKE, PRESS</p>
       <div className="piano-keys">
         {WHITES.map((n, i) => (
           <button

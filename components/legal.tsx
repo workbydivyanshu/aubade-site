@@ -23,7 +23,7 @@ export function LegalPage({
           {title}
         </h1>
         <p className="legal-updated mono" data-reveal>
-          Last kept current — {updated}
+          Last updated {updated}
         </p>
         <p className="legal-intro" data-reveal>
           {intro}

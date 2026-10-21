@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/legal";
 
 export const metadata: Metadata = {
-  title: "Terms — Aubade",
+  title: "Terms · Aubade",
   description:
-    "The short, human terms for using Aubade: your files, your rights, your responsibility — and ours.",
+    "The short terms for using Aubade: your files, your rights, your responsibility, and ours.",
 };
 
 export default function Terms() {
@@ -18,13 +18,13 @@ export default function Terms() {
         {
           h: "What Aubade is",
           p: [
-            "Aubade is a desktop music player. It reads the audio files you already own, plays them, helps organise them, and shows lyrics when they are available locally or from a lyric lookup you choose. It is provided as-is, in the versions published on the download page.",
+            "Aubade is a desktop music player. It reads the audio files you already own, plays them, helps organize them, and shows lyrics when they are available locally or from a lyric lookup you choose. It is provided as-is, in the versions published on the download page.",
           ],
         },
         {
           h: "Your files, your rights, your responsibility",
           p: [
-            "Aubade plays whatever exists in your folders and does not license, sell or obtain music on your behalf. The law where you live applies to every file in your library: keep tracks you are allowed to keep, and the player will stay simply a player.",
+            "Aubade plays whatever exists in your folders and does not license, sell or obtain music on your behalf. The law where you live applies to every file in your library. Keep the tracks you are allowed to keep, and the player stays just a player.",
           ],
         },
         {
@@ -40,15 +40,15 @@ export default function Terms() {
           ],
         },
         {
-          h: "Updates and their order of consent",
+          h: "Updates, and your consent",
           p: [
-            "Aubade may check for updates anonymously; accepting an update is always a choice you make inside the app. Both this website and the player will keep aiming at the latest stable release, and neither pranks you with marketing interruptions.",
+            "Aubade may check for updates anonymously. Accepting an update is always your choice, made inside the app. This website and the player both point at the latest stable release, and neither interrupts you with marketing.",
           ],
         },
         {
-          h: "If terms have to move",
+          h: "If these terms change",
           p: [
-            "Changes to these terms ship alongside the release they belong to, surfaced on this page. Continuing to use a version after its terms change means you agree to those terms for that version.",
+            "Changes to these terms ship with the release they belong to, and they show up on this page. If you keep using a version after its terms change, you agree to those terms for that version.",
           ],
         },
       ]}
