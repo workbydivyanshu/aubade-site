@@ -427,6 +427,10 @@ html.ready .nav {
   vertical-align: bottom;
   padding-bottom: 0.14em;
   margin-bottom: -0.14em;
+  margin-right: 0.26em;
+}
+.words .clip:last-child {
+  margin-right: 0;
 }
 .words .w {
   display: inline-block;
@@ -569,21 +573,22 @@ html.ready .hero-canvas {
 }
 .hstat {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.18em;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
   color: var(--dim);
   text-transform: uppercase;
+  white-space: nowrap;
   transition: color var(--normal) ease;
 }
 .hstat:hover { color: var(--sub); }
 .hstat b {
   display: block;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--ink);
   font-variant-numeric: tabular-nums;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 /* ============================================================
@@ -1004,9 +1009,20 @@ html.ready .aw-float {
   0%, 100% { transform: rotate(-1.3deg) translateY(0); }
   50% { transform: rotate(-1.3deg) translateY(-12px); }
 }
+.hero-words {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(42px, 7vw, 112px);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
 .hero-words em {
   display: block;
   color: var(--accent);
+}
+.aw-float {
+  min-width: 0;
+  max-width: 100%;
 }
 @media (max-width: 900px) {
   .aw-float { animation: none !important; transform: none !important; }

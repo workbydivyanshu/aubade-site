@@ -77,7 +77,7 @@ export default function Hero() {
           >
             {[
               ["5,677", "track library"],
-              ["0", "accounts & cloud"],
+              ["0", "cloud, ever"],
               ["30hz", "lyrics clock"],
               ["82px", "island dock"],
             ].map(([b, t]) => (
