@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="mx-auto max-w-[1380px]">
         <div style={{ maxWidth: 880 }}>
           <p className="overline" data-hero style={{ "--d": ".05s" } as React.CSSProperties}>
-            Local-first — Fedora first, everywhere
+            Local-first — Linux first, everywhere
           </p>
 
           <h1

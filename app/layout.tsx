@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aubadehq.vercel.app"),
   title: "Aubade — Every track you own. One keystroke away.",
   description:
-    "Aubade is a local-first music player for the desktop. Your library is a folder, your lyrics keep time, and your dock is an island. Built on Fedora, shipped for every OS.",
+    "Aubade is a local-first music player for the desktop. Your library is a folder, your lyrics keep time, and your dock is an island. Built on Linux, shipped for every OS.",
   icons: { icon: "/favicon.svg" },
   alternates: { canonical: "https://aubadehq.vercel.app" },
   openGraph: {
